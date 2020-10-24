@@ -23,12 +23,56 @@
 # plt.xlabel('Funcion Normal Random')
 # plt.show()
 
+
+
 # ------ESTRUCTURA DE DATOS  ------------------------
+
 # ////LISTA////
-x=[1,2,3,4,5,6,7]
+print('')
+print('-----------------Lists = se puede variar los elemntos----------------')
+x=[1,2,3,4,5,6]
 print(len(x))
 
 print(x[:3])
 print(x[3:])
 print(x[-2:])
-print(x.extend([8,9]))
+x.extend([7,8])
+x.append(9)
+print(x)
+y=[10,11,12]
+listoflists=[x,y]
+print(listoflists)
+print(y[1])
+z=[3,2,1]
+z.sort()
+print(z)
+
+# /////TUPLES///////
+print('')
+print('-----------------Tuples = no son variables----------------')
+x=(1,2,3)
+print(len(x))
+y=(4,5,6)
+print(y[1])
+listoftuples=[x,y]
+print(listoftuples)
+(age,income)='32,12000'.split(',')
+print(age)
+print(income)
+
+
+# /////DICTIONARIES///////
+print('')
+print('-----------------Disctionaries = son variables----------------')
+captains={}
+captains['Enterprise']='Kirk'
+captains['Enterprise D']='Picard'
+captains['Deep Space Nine']='Sisko'
+captains['Voyager']='Janeway'
+
+print(captains['Voyager'][0])
+print(captains)
+print(captains.get('Enterprise'))
+
+for ship in captains:
+    print(ship + ':' + captains[ship] )
