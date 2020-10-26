@@ -76,3 +76,73 @@ print(captains.get('Enterprise'))
 
 for ship in captains:
     print(ship + ':' + captains[ship] )
+
+
+
+
+# ////FUNCTIONS /////////////
+
+print('')
+print('-----------------Functions----------------')
+def squareIt(x):
+    return x*x
+print(squareIt(9))
+
+def DoSomething(f,x):
+    return f(x)
+print(DoSomething(squareIt,2))
+
+
+print(DoSomething(lambda x:x*x*x,3))
+
+
+
+
+# ////FUNCTIONS /////////////
+
+print('')
+print('-----------------Boolean Expression----------------')
+
+print(1==3)
+print (True or False)
+print (1 is 3)
+
+if 1 is 3:
+    print("hoe did that happen")
+elif 1>3:
+    print('yikes')
+elif 1<3:
+    print('All is well with the world')
+
+# //// LOOPING /////////////
+
+print('')
+print('----------------- Looping ----------------')
+for x in range(10):
+    print (x)
+
+print('')
+
+for x in range(10):
+    if x==1:
+        continue
+    if x>5:
+        break
+    print (x)
+
+print('')
+
+x=0
+while (x<10):
+    print(x)
+    x+=1 
+
+# //// LOOPING /////////////
+
+print('')
+print('----------------- Activity ----------------')
+for x in range(10):
+    if x%2 > 0:
+        continue
+    else:
+        print(x)
