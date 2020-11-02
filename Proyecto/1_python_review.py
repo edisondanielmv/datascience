@@ -146,3 +146,13 @@ for x in range(10):
         continue
     else:
         print(x)
+
+
+listofnumbers=[1,2,3,4,5,6]
+
+for number in listofnumbers:
+    if (number%2==0):
+        print(number, 'is even')
+    else:
+        print(number, 'is odd')
+print('horray!')
