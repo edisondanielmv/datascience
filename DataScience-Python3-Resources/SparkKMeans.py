@@ -27,8 +27,7 @@ def createClusteredData(N, k):
 data = sc.parallelize(scale(createClusteredData(100, K)))
 
 # Build the model (cluster the data)
-clusters = KMeans.train(data, K, maxIterations=10,
-        runs=10, initializationMode="random")
+clusters = KMeans.train(data, K, maxIterations=10, initializationMode="random")
 
 # Print out the cluster assignments
 resultRDD = data.map(lambda point: clusters.predict(point)).cache()
